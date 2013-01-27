@@ -31,14 +31,14 @@ from hmglobals import DEBUG
 pygame.init()
 
 
-def titleScreen(screen):
+def titleScreen(screen,image ,sound):
 		screen = screen
 		background = 0,0,0
 		playMenu = True
 
 		
 		#adds a object with image and sound 
-		titleScreen = hmObject("barrel.png","heartbeat.ogg", (0,0), (255,0,255))
+		titleScreen = hmObject(image, sound, (0,0), (255,0,255))
 		
 		#Runs the title screen as long as the player dose not push the spacebar
 		while playMenu:
